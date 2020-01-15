@@ -4,6 +4,7 @@ import GitHubButton from 'react-github-btn'
 import Link from './link';
 import './styles.css';
 import config from '../../config.js';
+import Sidebar from "./sidebar";
 
 import Loadable from 'react-loadable';
 import LoadingProvider from './mdxComponents/loading';
@@ -18,7 +19,7 @@ if(isSearchEnabled && config.header.search.indexName) {
   );
 }
 
-import Sidebar from "./sidebar";
+
 
 const LoadableComponent = Loadable({
   loader: () => import('./search/index'),
